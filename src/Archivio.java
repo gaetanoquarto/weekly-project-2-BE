@@ -14,10 +14,12 @@ public class Archivio {
     static File fileInfo = new File(fileName);
     private static final String ENCODING = "utf-8";
     
+   
+    
 	
 	public static void main(String[] args) throws IOException {
 		
-		 ArrayList<String> archivio = new ArrayList<>(FileUtils.readLines(fileInfo, ENCODING));
+		 ArrayList<String> archivio = new ArrayList<String>(FileUtils.readLines(fileInfo, ENCODING));
 		
 		
 		boolean continuaProgramma = true;
